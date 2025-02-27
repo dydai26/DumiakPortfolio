@@ -11,17 +11,18 @@ body {
 
 
 .header-container {
-    position: relative;
+    position: relative; /* Важливо! */
     padding: 2rem;
     border-radius: 1rem;
     border: 1px solid #e5e7eb;
     width: 100%;
-    min-height: 300px; /* Встановлюємо мінімальну висоту */
-    background: transparent; /* Фон прозорий, щоб ::before було видно */
+    min-height: 300px; /* Щоб контейнер не стискався */
+    background: transparent; /* Щоб було видно фон */
+    overflow: visible; /* Щоб `::before` не ховалося */
 }
 
 .header-container::before {
-    content: "";
+    content: ""; /* Переконайся, що є */
     position: absolute;
     top: 0;
     left: 0;
@@ -31,8 +32,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 0; /* змінив з -1, щоб не ховалося за контентом */
-    border-radius: 1rem; /* Щоб фон повторював форму батьківського контейнера */
+    z-index: 1; /* Змінив з -1 на 1 */
+    border-radius: 1rem; /* Щоб повторювало форму */
 }
 
 
