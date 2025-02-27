@@ -3,7 +3,7 @@ function Header() {
         return (
             <div
   className="header-container relative w-full h-48 flex flex-col justify-center px-8 rounded-2xl overflow-hidden bg-cover bg-center"
-  style={{ backgroundImage: "url('/img/baner.jpg')" }}
+  style={{ backgroundImage: "url('./img/baner.jpg')" }}
   data-name="header"
 >
   <div className="relative z-10">
