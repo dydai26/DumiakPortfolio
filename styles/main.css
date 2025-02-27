@@ -15,8 +15,9 @@ body {
     padding: 2rem;
     border-radius: 1rem;
     border: 1px solid #e5e7eb;
-    height: 100%; /* Забезпечуємо висоту на всю площу */
-    width: 100%; /* Займає всю ширину */
+    width: 100%;
+    min-height: 300px; /* Встановлюємо мінімальну висоту */
+    background: transparent; /* Фон прозорий, щоб ::before було видно */
 }
 
 .header-container::before {
@@ -26,10 +27,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/img/baner.jpg');
+    background-image: url('/img/baner.jpg'); /* Виправлений шлях */
     background-size: cover;
     background-position: center;
-    z-index: -1; /* Забезпечуємо, щоб зображення було на фоні */
+    background-repeat: no-repeat;
+    z-index: 0; /* змінив з -1, щоб не ховалося за контентом */
+    border-radius: 1rem; /* Щоб фон повторював форму батьківського контейнера */
 }
 
 
