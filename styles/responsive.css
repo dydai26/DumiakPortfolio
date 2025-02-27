@@ -1,0 +1,66 @@
+@media (max-width: 768px) {
+    .portfolio-container {
+        margin: 1rem;
+    }
+
+    .header-container {
+        padding: 1rem;
+    }
+
+    .header-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .profile-image-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .typewriter-container {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+
+    .experience-section {
+        margin-top: 2rem;
+    }
+
+    .contact-section .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .header-container h1 {
+        font-size: 2rem;
+    }
+
+    .header-container .flex {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+
+    .category-list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .category-button {
+        flex-shrink: 0;
+    }
+
+    .section-title {
+        font-size: 0.875rem;
+        padding: 0.25rem 1rem;
+    }
+}

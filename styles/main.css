@@ -1,0 +1,159 @@
+body {
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.portfolio-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+
+.header-container {
+    position: relative;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #e5e7eb;
+    height: 100%; /* Забезпечуємо висоту на всю площу */
+    width: 100%; /* Займає всю ширину */
+}
+
+.header-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/baner.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Забезпечуємо, щоб зображення було на фоні */
+}
+
+
+.decoration-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.decoration-star {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.animate-blink {
+    animation: blink 1s step-end infinite;
+}
+
+.section-title {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    position: relative;
+    white-space: nowrap;
+    backdrop-filter: blur(8px);
+}
+
+.section-title.education {
+    background-color: rgba(115, 114, 114, 100); /* графітовий колір з прозорістю */
+    color: white; /* білий текст */
+}
+
+.section-title.skills {
+    background-color: rgba(115, 114, 114, 100); /* графітовий колір з прозорістю */
+    color: white; /* білий текст */
+}
+
+.section-title.experience {
+    background-color: rgba(115, 114, 114, 100); /* графітовий колір з прозорістю */
+    color: white; /* білий текст */
+}
+
+.section-title.portfolio {
+    background-color: rgba(115, 114, 114, 100); /* графітовий колір з прозорістю */
+    color: white; /* білий текст */
+}
+
+.section-title.contact {
+    background-color: rgba(115, 114, 114, 100); /* графітовий колір з прозорістю */
+    color: white; /* білий текст */
+}
+
+
+.profile-image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 999px;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.profile-image-container img {
+    border-radius: 999px;
+}
+
+.software-icon {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #030404;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: rgba(200, 15, 15, 0.837);
+    backdrop-filter: blur(8px);
+}
+
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e41010;
+    margin-right: 1rem;
+}
+
+.timeline-line {
+    width: 2px;
+    background-color: #E5E7EB;
+    height: 100%;
+    position: absolute;
+    left: 5px;
+    top: 12px;
+}
+
+.portfolio-card {
+    cursor: pointer;
+}
+
+.portfolio-card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+
