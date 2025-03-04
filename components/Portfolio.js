@@ -184,7 +184,7 @@ function Portfolio() {
                 title: "Landing page for Hair Care Products",
                 category: "UI/UX Design",
                 images: [
-                    "/img/macbook-16.png",
+                    "./img/macbook-16.png",
                     "./img/photo-3.png",
                     "https://images.unsplash.com/photo-1551651653-c5186a1fbba2?w=800&auto=format"
                 ],
