@@ -170,7 +170,7 @@ function Portfolio() {
                 title: "Construction Company Branding",
                 category: "Branding & Print production",
                 images: [
-                    "./img/foto11.png",
+                    "./img/foto1.png",
                     "./img/photo-3.png",
                     "https://images.unsplash.com/photo-1542744173-8659239458d9?w=800&auto=format"
                 ],
