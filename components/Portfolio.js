@@ -170,7 +170,7 @@ function Portfolio() {
                 title: "Construction Company Branding",
                 category: "Branding & Print production",
                 images: [
-                    "./img/foto11.png",
+                    "./img/foto1.png",
                     "./img/case1_2.png",
                     "./img/case1_3.png"
                 ],
